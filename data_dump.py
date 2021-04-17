@@ -39,8 +39,4 @@ if __name__ == "__main__":
     tickers = [tickers[i:i + CHUNKS] for i in range(0, len(tickers), CHUNKS)]
 
     with multiprocessing.Pool(PROCESSES) as pool:
-<<<<<<< HEAD
         pool.starmap(download_data, enumerate(tickers, start=1)) 
-=======
-        pool.starmap(download_data, enumerate(tickers, start=1)) 
->>>>>>> d019f66... git bs
